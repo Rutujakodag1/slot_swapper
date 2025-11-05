@@ -15,7 +15,7 @@ function App() {
         {children}
       </>
     ) : (
-      <Navigate to="/login" />
+      <Navigate to="/" />
     );
   };
 
@@ -23,7 +23,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Login />} />
         <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
         <Route path="/marketplace" element={<PrivateRoute><Marketplace /></PrivateRoute>} />
         <Route path="/requests" element={<PrivateRoute><Requests /></PrivateRoute>} />
