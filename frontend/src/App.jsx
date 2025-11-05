@@ -2,10 +2,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Register from "./components/Register";
 import Login from "./components/Login";
 import Dashboard from "./components/Dashboard";
-import Marketplace from "./components/MarketPlace";
 import Requests from "./components/Requests";
 import { Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Marketplace from "./components/Marketplaces";
 function App() {
   const PrivateRoute = ({ children }) => {
     const token = localStorage.getItem("accessToken");
