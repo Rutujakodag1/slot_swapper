@@ -21,7 +21,7 @@ const Register = () => {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8000/api/users/register/",
+        "https://slot-swapper-backend-mcaw.onrender.com/api/users/register/",
         formData
       );
       console.log(response.data);

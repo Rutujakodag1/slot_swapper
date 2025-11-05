@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://127.0.0.1:8000/api/users", // adjust path if needed
+  baseURL: "https://slot-swapper-backend-mcaw.onrender.com/api/users", // adjust path if needed
 });
 
 // ✅ Add Authorization token for every request
